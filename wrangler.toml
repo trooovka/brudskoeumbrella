@@ -1,0 +1,8 @@
+name = "brudskoe"
+compatibility_date = "2025-01-01"
+pages_build_output_dir = "public"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "brudskoe-db"
+database_id = "ВСТАВЬ_СЮДА_ID_ИЗ_ШАГА_3"
