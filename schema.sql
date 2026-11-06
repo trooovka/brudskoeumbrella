@@ -1,0 +1,16 @@
+CREATE TABLE IF NOT EXISTS users (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  nick TEXT NOT NULL,
+  nick_lc TEXT NOT NULL UNIQUE,
+  salt TEXT NOT NULL,
+  hash TEXT NOT NULL,
+  rank TEXT NOT NULL,
+  num TEXT NOT NULL,
+  created INTEGER NOT NULL
+);
+CREATE TABLE IF NOT EXISTS sessions (
+  token_hash TEXT PRIMARY KEY,
+  user_id INTEGER NOT NULL,
+  expires INTEGER NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_sessions_user ON sessions(user_id);
