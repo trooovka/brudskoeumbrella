@@ -6,3 +6,9 @@ pages_build_output_dir = "public"
 binding = "DB"
 database_name = "brudskoe-db"
 database_id = "8d7b9f3d-2ed7-4e23-9697-ecae19dff33d"
+# ...
+[observability.logs]
+enabled = true
+invocation_logs = true
+persist = true
+# ...
